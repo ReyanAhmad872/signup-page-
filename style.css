@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to top left, #a8f5ff, #0096c7);
+}
+
+.card {
+  border: 2px;
+  margin: 100px auto;
+  border-radius: 10px;
+  width: 380px;
+  height: 380px;
+  background-color: aliceblue;
+}
+h1 {
+  padding-top: 20px;
+  padding-left: 80px;
+}
+
+.from {
+  padding: 20px;
+}
+
+.p {
+  padding-left: 50px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+input {
+  padding: 6px;
+  padding-left: 10px;
+  border: 1.5px solid skyblue;
+  border-radius: 10px;
+  width: 200px;
+}
+
+button {
+  margin-top: 10px;
+  margin-left: 50px;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid skyblue;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  width: 200px;
+}
+
+button:hover {
+  background-color: #0096c7;
+  cursor: pointer;
+}
+.footer {
+  padding-left: 70px;
+}
