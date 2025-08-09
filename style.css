@@ -12,13 +12,16 @@ body {
   border: 2px;
   margin: 100px auto;
   border-radius: 10px;
-  width: 380px;
-  height: 380px;
+  width: 90%;          /* پہلے fixed 380px تھا */
+  max-width: 380px;    /* بڑے screen پر 380px سے زیادہ نہ ہو */
+  height: auto;        /* height کو auto کر دیا تاکہ content adjust ہو */
   background-color: aliceblue;
 }
+
 h1 {
   padding-top: 20px;
   padding-left: 80px;
+  text-align: center;  /* چھوٹی screen پر اچھا لگے گا */
 }
 
 .from {
@@ -32,8 +35,7 @@ h1 {
 }
 
 input {
-  padding: 6px;
-  padding-left: 10px;
+  padding: 6px 10px;
   border: 1.5px solid skyblue;
   border-radius: 10px;
   width: 200px;
@@ -42,10 +44,8 @@ input {
 button {
   margin-top: 10px;
   margin-left: 50px;
-
   padding: 10px;
   border-radius: 10px;
-  border: 1.5px solid skyblue;
   background-color: #0077b6;
   color: white;
   border: none;
@@ -56,6 +56,31 @@ button:hover {
   background-color: #0096c7;
   cursor: pointer;
 }
+
 .footer {
   padding-left: 70px;
+}
+
+/* 📱 Mobile responsive adjustments */
+@media (max-width: 480px) {
+  .p {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  input, button {
+    width: 90%;
+    max-width: 250px;
+    margin-left: 0;
+  }
+
+  h1 {
+    padding-left: 0;
+    font-size: 20px;
+  }
+
+  .footer {
+    padding-left: 0;
+    text-align: center;
+  }
 }
